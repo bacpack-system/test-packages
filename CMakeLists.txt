@@ -5,6 +5,7 @@ OPTION(USE_PACKAGE_1 "Use test_package_1" OFF)
 OPTION(USE_PACKAGE_2 "Use test_package_2" OFF)
 OPTION(USE_PACKAGE_3 "Use test_package_3" OFF)
 OPTION(USE_PACKAGE_4 "Use test_package_4" OFF)
+OPTION(USE_PACKAGE_4 "Use test_package_5" OFF)
 
 if(USE_PACKAGE_1)
     MESSAGE(STATUS "Building test_package_2")
