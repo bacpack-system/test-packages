@@ -10,11 +10,13 @@ FIND_PACKAGE(CMLIB COMPONENTS CMDEF CMUTIL STORAGE REQUIRED)
 # Dependencies
 BA_PACKAGE_LIBRARY(test-package-a v1.0.0)
 BA_PACKAGE_LIBRARY(test-package-b v1.0.0)
+BA_PACKAGE_LIBRARY(test-package-c v1.0.0)
 BA_PACKAGE_LIBRARY(test-package-d v1.0.0)
 BA_PACKAGE_LIBRARY(test-package-e v1.0.0)
 
 FIND_PACKAGE(test-package-a-shared 1.0.0 REQUIRED)
 FIND_PACKAGE(test-package-b-shared 1.0.0 REQUIRED)
+FIND_PACKAGE(test-package-c-shared 1.0.0 REQUIRED)
 FIND_PACKAGE(test-package-d-shared 1.0.0 REQUIRED)
 FIND_PACKAGE(test-package-e-shared 1.0.0 REQUIRED)
 
@@ -29,6 +31,7 @@ TARGET_LINK_LIBRARIES(
     PRIVATE
     test-package-a-shared::test-package-a-shared
     test-package-b-shared::test-package-b-shared
+    test-package-c-shared::test-package-c-shared
     test-package-d-shared::test-package-d-shared
     test-package-e-shared::test-package-e-shared
 )
