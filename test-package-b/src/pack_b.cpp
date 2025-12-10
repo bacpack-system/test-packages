@@ -1,5 +1,3 @@
-#include <iostream>
-
 #include <pack_b.hpp>
 #include <pack_a.hpp>
 
